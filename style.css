@@ -504,9 +504,19 @@ hr{
   .projects-items{
     grid-template-columns: repeat(1,1fr);
   }
+  .education-items{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .experince-items{
+    grid-template-columns: repeat(1,1fr);
+  }
 
   .heading{
     font-size: 2.7rem;
+  }
+
+  .logo .img{
+    width: 8vw;
   }
 }
 @media(max-width:450px){
