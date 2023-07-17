@@ -1,9 +1,10 @@
 /* CSS Reset */
 /* Lets import Google font */
 
-@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins&family=Titillium+Web:ital@0;1&display=swap');
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   margin: 0;
   padding: 0;
   border: none;
@@ -11,7 +12,7 @@
   text-decoration: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  color: white;
+  color: black;
 }
 
 html {
@@ -20,14 +21,14 @@ html {
 }
 
 body {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
 /*  Header Section */
 
 .header {
-  background: rgba(0, 0, 0, 0.9);
+  background: #639bf1;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,7 +43,7 @@ body {
 .logo {
   font-size: 2.2rem;
   font-weight: 600;
-  color: #eeb76b;
+  color: #77ba9b;
 }
 
 .logo img {
@@ -55,9 +56,10 @@ body {
   font-size: 1.5rem;
   margin-left: 3.5rem;
   transition: 0.4s ease;
+  color: black;
 }
 .menu-bar a:hover {
-  color: #eeb76b;
+  color: white;
 }
 
 #menu-btn {
@@ -81,7 +83,7 @@ section {
 }
 
 span {
-  color: #eeb76b;
+  color: #77ba9b;
 }
 
 .home-bio h1 {
@@ -127,7 +129,7 @@ span {
 }
 
 .contact-info .bx:hover{
-  color:#eeb76b;
+  color:#77ba9b;
 }
 
 
@@ -144,12 +146,12 @@ span {
   transition: 0.4s ease;
 }
 .social-media a:hover {
-  color: #eeb76b;
-  box-shadow: 0 0 1rem #eeb76b;
+  color: #77ba9b;
+  box-shadow: 0 0 1rem #77ba9b;
 }
 .btn {
   display: inline-block;
-  background: #eeb76b;
+  background: #77ba9b;
   margin: 2rem 0;
   padding: 1rem 2.5rem;
   border-radius: 1.3rem;
@@ -159,9 +161,9 @@ span {
   transition: 0.5s ease;
 }
 .btn:hover {
-  color: #eeb76b;
+  color: #77ba9b;
   background: #000;
-  box-shadow: 0 0 1rem #eeb76b;
+  box-shadow: 0 0 1rem #77ba9b;
 }
 
 /*  About Section */
@@ -213,7 +215,7 @@ span {
   flex-direction: column;
   cursor: pointer;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-    border: 2px solid white;
+    border: 2px solid #77ba9b;
     border-radius: 10px;
     padding: 20px;
 }
@@ -230,7 +232,7 @@ span {
 }
 
 .education-card i:hover {
-  color: #eeb76b;
+  color: #77ba9b;
 }
 
 .education-card h3 {
@@ -263,7 +265,7 @@ span {
   flex-direction: column;
   cursor: pointer;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  border: 2px solid white;
+  border: 2px solid #77ba9b;
   border-radius: 10px;
   padding: 40px;
 }
@@ -279,7 +281,7 @@ span {
 }
 
 .experience-card i:hover {
-  color: #eeb76b;
+  color: #77ba9b;
 }
 
 .experience-card h3 {
@@ -342,7 +344,7 @@ li .bx{
 }
 
 .skill-card .bx:hover{
-  color:#eeb76b;
+  color:#77ba9b;
 }
 
 .skill-card h3{
@@ -408,9 +410,9 @@ li .bx{
 
 .card-overlay .bx:hover{
   transition: scale(1.2);
-  color: #eeb76b;
+  color: #77ba9b;
   background: #000;
-  box-shadow: 0 0 2rem #eeb76b;
+  box-shadow: 0 0 2rem #77ba9b;
 }
 /*  Contact Section */
 
@@ -429,8 +431,8 @@ form input,textarea{
   width: 100%;
   padding: 1rem;
   font-size: 1.5rem;
-  color: #fff;
-  background: rgba(0,0,0,0.5);
+  color: #000;
+  background: #77ba9b;
   border-radius: 1rem;
   resize: none;
 
@@ -445,7 +447,7 @@ footer{
 
 hr{
   margin: 1rem;
-  border-bottom: thin solid #fff;
+  border-bottom: thin solid #77ba9b;
 }
 /*  Responsive Section */
 
@@ -472,7 +474,7 @@ hr{
     position: absolute;
     left: 0;
     top: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: #639bf1;
     display: none;
   }
   .menu-bar.active{
