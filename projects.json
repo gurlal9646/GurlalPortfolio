@@ -1,0 +1,26 @@
+[
+  {
+    "imageSrc": "./images/Krogers_project.png",
+    "link": "https://krogersapi.netlify.app/stores.html"
+  },
+  {
+    "imageSrc": "./images/foodonwheels_project.png",
+    "link": "https://foodonwhels.netlify.app/html/login"
+  },
+  {
+    "imageSrc": "./images/Spotify_genre_project.png",
+    "link": "https://spotifygenres.netlify.app/"
+  },
+  {
+    "imageSrc": "./images/Xieo_project.png",
+    "link": "https://portal.xieo.com/login"
+  },
+  {
+    "imageSrc": "./images/Authx_project.png",
+    "link": "https://admin.authx.com/login"
+  },
+  {
+    "imageSrc": "./images/bimag_project.png",
+    "link": "https://bimag.in/"
+  }
+]
