@@ -21,6 +21,10 @@
   },
   {
     "imageSrc": "./images/bimag_project.png",
-    "link": "https://bimag.in/"
+    "link": "https://click4bima.in/"
+  },
+    {
+    "imageSrc": "./images/codeeditor.png",
+    "link": "https://codemodifier.netlify.app/"
   }
 ]
