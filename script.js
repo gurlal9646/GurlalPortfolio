@@ -36,7 +36,7 @@ const animText = new Typed('.animated-text',{
 
 
 //Project cards
- (function () {
+ function frameProjectCard () {
       // Function to create a project card based on the JSON data
       function createProjectCard(project) {
         return `
@@ -67,4 +67,5 @@ const animText = new Typed('.animated-text',{
         .then(response => response.json())
         .then(data => renderProjectCards(data))
         .catch(error => console.error('Error fetching JSON:', error));
-    })();
+    }
+frameProjectCard();
