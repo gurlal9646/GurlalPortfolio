@@ -33,3 +33,36 @@ const animText = new Typed('.animated-text',{
     backDelay:600,
     loop: true
 })
+
+
+//Project cards
+
+  function createProjectCard(project) {
+      return `
+        <div class="project-card">
+          <img src="${project.imageSrc}" alt="" />
+          <div class="card-overlay">
+            <a href="${project.link}" target="_blank">
+              <i class="bx bx-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      `;
+    }
+
+    // Function to render the project cards
+    function renderProjectCards(projectsData) {
+      const container = document.getElementById("project-container");
+
+      // Loop through the JSON data and generate project cards
+      for (const project of projectsData) {
+        const cardHtml = createProjectCard(project);
+        container.innerHTML += cardHtml;
+      }
+    }
+
+    // Fetch the JSON data and render the project cards
+    fetch('projects.json')
+      .then(response => response.json())
+      .then(data => renderProjectCards(data))
+      .catch(error => console.error('Error fetching JSON:', error));
