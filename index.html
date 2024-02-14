@@ -172,16 +172,60 @@
         </div>
     </div>
 </section>
-
 <!-- Projects Section -->
 <section class="projects py-20" id="projects">
     <div class="container mx-auto px-8">
         <div class="heading mb-12">
             <h2 class="text-4xl font-bold mb-4">Completed <span class="text-blue-500">Projects</span></h2>
         </div>
-        <!-- Add your project items here -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Items -->
+            <!-- Project 1 -->
+            <div class="project-item">
+                <a href="https://krogersapi.netlify.app/stores.html" target="_blank">
+                    <img src="./images/Krogers_project.png" alt="Krogers Project">
+                </a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-item">
+                <a href="https://foodonwhels.netlify.app/html/login" target="_blank">
+                    <img src="./images/foodonwheels_project.png" alt="Food on Wheels Project">
+                </a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-item">
+                <a href="https://spotifygenres.netlify.app/" target="_blank">
+                    <img src="./images/Spotify_genre_project.png" alt="Spotify Genre Project">
+                </a>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-item">
+                <a href="https://portal.xieo.com/login" target="_blank">
+                    <img src="./images/Xieo_project.png" alt="Xieo Project">
+                </a>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-item">
+                <a href="https://admin.authx.com/login" target="_blank">
+                    <img src="./images/Authx_project.png" alt="Authx Project">
+                </a>
+            </div>
+            <!-- Project 6 -->
+            <div class="project-item">
+                <a href="https://click4bima.in/" target="_blank">
+                    <img src="./images/bimag_project.png" alt="Bimag Project">
+                </a>
+            </div>
+            <!-- Project 7 -->
+            <div class="project-item">
+                <a href="https://codemodifier.netlify.app/" target="_blank">
+                    <img src="./images/codeditor.png" alt="Code Editor Project">
+                </a>
+            </div>
+        </div>
     </div>
 </section>
+
 
 <!-- Contact Section -->
 <section class="contact py-20" id="contact">
@@ -202,64 +246,9 @@
 <footer class="footer bg-white border-t border-gray-200 py-6">
     <div class="container mx-auto px-8">
         <hr class="my-4">
-        <p class="text-center">&copy; 2023 All rights reserved.</p>
+        <p class="text-center">&copy; 2024 All rights reserved.</p>
     </div>
 </footer>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const projectsData = [
-            {
-                "imageSrc": "./images/Krogers_project.png",
-                "link": "https://krogersapi.netlify.app/stores.html"
-            },
-            {
-                "imageSrc": "./images/foodonwheels_project.png",
-                "link": "https://foodonwhels.netlify.app/html/login"
-            },
-            {
-                "imageSrc": "./images/Spotify_genre_project.png",
-                "link": "https://spotifygenres.netlify.app/"
-            },
-            {
-                "imageSrc": "./images/Xieo_project.png",
-                "link": "https://portal.xieo.com/login"
-            },
-            {
-                "imageSrc": "./images/Authx_project.png",
-                "link": "https://admin.authx.com/login"
-            },
-            {
-                "imageSrc": "./images/bimag_project.png",
-                "link": "https://click4bima.in/"
-            },
-            {
-                "imageSrc": "./images/codeditor.png",
-                "link": "https://codemodifier.netlify.app/"
-            }
-        ];
-
-        const projectContainer = document.getElementById('projects');
-        const projectGrid = projectContainer.querySelector('.grid');
-
-        projectsData.forEach(project => {
-            const projectItem = document.createElement('div');
-            projectItem.classList.add('project-item');
-
-            const projectImage = document.createElement('img');
-            projectImage.src = project.imageSrc;
-            projectImage.alt = 'Project Image';
-
-            const projectLink = document.createElement('a');
-            projectLink.href = project.link;
-            projectLink.target = '_blank';
-
-            projectLink.appendChild(projectImage);
-            projectItem.appendChild(projectLink);
-            projectGrid.appendChild(projectItem);
-        });
-    });
-</script>
 
 <!-- Scroll Reveal Section -->
 <script src="https://unpkg.com/scrollreveal"></script>
