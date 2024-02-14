@@ -12,25 +12,6 @@
 </head>
 <body class="bg-gray-100 text-gray-900 font-sans">
 
-<!-- Header Section -->
-<header class="header bg-white shadow-md">
-    <div class="container mx-auto flex items-center justify-between py-4 px-8">
-        <a href="#" class="logo">
-            <img src="./images/GLogo.png" alt="Logo">
-        </a>
-        <i class="bx bx-menu text-2xl md:hidden" id="menu-btn"></i>
-        <nav class="menu-bar hidden md:block">
-            <a href="#home" class="px-4 py-2">Home</a>
-            <a href="#about" class="px-4 py-2">About</a>
-            <a href="#education" class="px-4 py-2">Education</a>
-            <a href="#experience" class="px-4 py-2">Experience</a>
-            <a href="#skills" class="px-4 py-2">Skills</a>
-            <a href="#projects" class="px-4 py-2">Projects</a>
-            <a href="#contact" class="px-4 py-2">Contact</a>
-        </nav>
-    </div>
-</header>
-
 <!-- Home Section -->
 <section class="home py-20" id="home">
     <div class="container mx-auto flex items-center justify-between px-8">
@@ -45,9 +26,9 @@
                 success. Let's connect and discuss collaboration opportunities.
             </p>
             <div class="contact-info mb-6">
-                <p><i class="bx bx-mail-send"></i> Gurlal9646@gmail.com</p>
+                <p><i class="bx bx-mail-send"></i> Gurlals2024@gmail.com</p>
                 <p><i class="bx bx-phone-call"></i> +1 (647) 677-4957</p>
-                <p><i class="bx bx-map"></i> Toronto, Canada</p>
+                <p><i class="bx bx-map"></i> Toronto, ON, Canada</p>
             </div>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/gurlal9646/" target="_blank" class="mr-2"><i class="bx bxl-linkedin text-2xl"></i></a>
@@ -56,9 +37,6 @@
                 <a href="https://www.instagram.com/gurlal9646/" target="_blank" class="ml-2"><i class="bx bxl-instagram text-2xl"></i></a>
             </div>
             <a href="#contact" class="btn mt-4">Let's talk</a>
-        </div>
-        <div class="profile-pic">
-            <img src="./images/gurlal.jpg" alt="Profile Picture">
         </div>
     </div>
 </section>
@@ -227,6 +205,61 @@
         <p class="text-center">&copy; 2023 All rights reserved.</p>
     </div>
 </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const projectsData = [
+            {
+                "imageSrc": "./images/Krogers_project.png",
+                "link": "https://krogersapi.netlify.app/stores.html"
+            },
+            {
+                "imageSrc": "./images/foodonwheels_project.png",
+                "link": "https://foodonwhels.netlify.app/html/login"
+            },
+            {
+                "imageSrc": "./images/Spotify_genre_project.png",
+                "link": "https://spotifygenres.netlify.app/"
+            },
+            {
+                "imageSrc": "./images/Xieo_project.png",
+                "link": "https://portal.xieo.com/login"
+            },
+            {
+                "imageSrc": "./images/Authx_project.png",
+                "link": "https://admin.authx.com/login"
+            },
+            {
+                "imageSrc": "./images/bimag_project.png",
+                "link": "https://click4bima.in/"
+            },
+            {
+                "imageSrc": "./images/codeditor.png",
+                "link": "https://codemodifier.netlify.app/"
+            }
+        ];
+
+        const projectContainer = document.getElementById('projects');
+        const projectGrid = projectContainer.querySelector('.grid');
+
+        projectsData.forEach(project => {
+            const projectItem = document.createElement('div');
+            projectItem.classList.add('project-item');
+
+            const projectImage = document.createElement('img');
+            projectImage.src = project.imageSrc;
+            projectImage.alt = 'Project Image';
+
+            const projectLink = document.createElement('a');
+            projectLink.href = project.link;
+            projectLink.target = '_blank';
+
+            projectLink.appendChild(projectImage);
+            projectItem.appendChild(projectLink);
+            projectGrid.appendChild(projectItem);
+        });
+    });
+</script>
 
 <!-- Scroll Reveal Section -->
 <script src="https://unpkg.com/scrollreveal"></script>
