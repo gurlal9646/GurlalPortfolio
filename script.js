@@ -34,38 +34,55 @@ const animText = new Typed('.animated-text',{
     loop: true
 })
 
+document.addEventListener('DOMContentLoaded', function () {
+        const projectsData = [
+            {
+                "imageSrc": "./images/Krogers_project.png",
+                "link": "https://krogersapi.netlify.app/stores.html"
+            },
+            {
+                "imageSrc": "./images/foodonwheels_project.png",
+                "link": "https://foodonwhels.netlify.app/html/login"
+            },
+            {
+                "imageSrc": "./images/Spotify_genre_project.png",
+                "link": "https://spotifygenres.netlify.app/"
+            },
+            {
+                "imageSrc": "./images/Xieo_project.png",
+                "link": "https://portal.xieo.com/login"
+            },
+            {
+                "imageSrc": "./images/Authx_project.png",
+                "link": "https://admin.authx.com/login"
+            },
+            {
+                "imageSrc": "./images/bimag_project.png",
+                "link": "https://click4bima.in/"
+            },
+            {
+                "imageSrc": "./images/codeditor.png",
+                "link": "https://codemodifier.netlify.app/"
+            }
+        ];
 
-//Project cards
- function frameProjectCard () {
-      // Function to create a project card based on the JSON data
-      function createProjectCard(project) {
-        return `
-          <div class="project-card">
-            <img src="${project.imageSrc}" alt="" />
-            <div class="card-overlay">
-              <a href="${project.link}" target="_blank">
-                <i class="bx bx-link-alt"></i>
-              </a>
-            </div>
-          </div>
-        `;
-      }
+        const projectContainer = document.getElementById('projects');
+        const projectGrid = projectContainer.querySelector('.grid');
 
-      // Function to render the project cards
-      function renderProjectCards(projectsData) {
-        const container = document.getElementById("project-container");
+        projectsData.forEach(project => {
+            const projectItem = document.createElement('div');
+            projectItem.classList.add('project-item');
 
-        // Loop through the JSON data and generate project cards
-        for (const project of projectsData) {
-          const cardHtml = createProjectCard(project);
-          container.innerHTML += cardHtml;
-        }
-      }
+            const projectImage = document.createElement('img');
+            projectImage.src = project.imageSrc;
+            projectImage.alt = 'Project Image';
 
-      // Fetch the JSON data and render the project cards
-      fetch('projects.json')
-        .then(response => response.json())
-        .then(data => renderProjectCards(data))
-        .catch(error => console.error('Error fetching JSON:', error));
-    }
-frameProjectCard();
+            const projectLink = document.createElement('a');
+            projectLink.href = project.link;
+            projectLink.target = '_blank';
+
+            projectLink.appendChild(projectImage);
+            projectItem.appendChild(projectLink);
+            projectGrid.appendChild(projectItem);
+        });
+    });
